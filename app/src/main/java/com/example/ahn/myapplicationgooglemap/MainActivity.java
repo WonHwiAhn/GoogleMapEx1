@@ -457,7 +457,7 @@ public class MainActivity extends Activity implements
             Toast.makeText( this, errorMessage, Toast.LENGTH_LONG).show();
         } else {
             Address address = addresses.get(0);
-            Toast.makeText( this, address.getAddressLine(0).toString(), Toast.LENGTH_LONG).show();
+            Toast.makeText( this, address.getAddressLine(0).toString() + "    " + address.getLatitude() + "     " + address.getLongitude(), Toast.LENGTH_LONG).show();
         }
     }
 
